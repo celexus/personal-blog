@@ -1,0 +1,78 @@
+body {
+    color: #000;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15vh 45vh 35vh 15vh;
+    grid-template-areas: "nav"
+    "left"
+    "right"
+    "bottom";
+    margin: auto;
+    width: 100%;
+    border:1px solid blue;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid red;
+    padding: 15px;
+}
+img {
+    width: 100%;
+}
+#navigation {
+    grid-area:nav;
+    display: grid;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+}
+.menu, .social {
+    list-style:none;
+}
+#sidebar{
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+}
+.profile {
+    max-width: 200px;
+}
+.profile img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.logo {
+    max-width: 100px;
+}
+#content{
+    grid-area: right;
+}
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    background-image: url("../images/office-banner.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#footer{
+    grid-area: bottom;
+}
+/* change layout for large screens */
+@media(min-width:800px){
+    .container {
+        max-width: 1920px;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 10vh 80vh 10vh;
+        grid-template-areas: "nav nav"
+        "left right"
+        "bottom bottom";
+    }
+}
