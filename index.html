@@ -4,50 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Celéste's Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <div class="container">
-        <nav id="navigation" class="box">
+        <header id="header">
+            <div class="logo-container">
+                <img class="logo" src="images/logo_200x200.png" alt="celestera"/>
+            </div>
+        </header>
 
-            <ul class="menu">
-                <li>
-                    <a href="/">Home</a>
-                </li>
-            </ul>
-
-        </nav>
-        <aside id="sidebar" class="box">
+        <aside id="sidebar">
 
             <div class="profile">
                 <img src="images/profile.jpg" alt="Celeste Erasmus"/>
             </div>
+            <nav id="navigation">
+            <ul class="menu">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/">Blog Post</a>
+                </li>
+            </ul>
+            </nav>
 
-            <h1>Sidebar</h1>
 
-            <div class="logo">
-                <img src="images/logo_200x200.png" alt="celestera"/>
-            </div>
 
         </aside>
-        <section id="content" class="box">
+        <section id="content">
 
             <div class="banner">
 
                 <div class="caption">
-                    <h2>Something about Web Development</h2>
+                    <h1>Web Development & CMS Integration</h1>
                 </div>
 
             </div>
-            <article>
 
-            </article>
-            <article>
+            <div id="portfolio">
 
-            </article>
+                <h2>Portfolio</h2>
+
+                <article class="article">
+                    <img src="images/momster-project.jpg" alt="Momster Box"/>
+                </article>
+
+                <article class="article">
+                    <img src="images/spier-project.jpg" alt="Spier"/>
+                </article>
+
+                <article class="article">
+                    <img src="images/bbmpoa-project.jpg" alt="BBMPOA"/>
+                </article>
+
+            </div>
 
         </section>
-        <footer id="footer" class="box">
+        <footer id="footer">
 
             <ul class="social">
                 <li><a href="https://www.facebook.com/celeste.erasmus.501" target="_blank"><span>Facebook</span></a></li>
