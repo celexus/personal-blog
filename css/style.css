@@ -50,36 +50,6 @@ body {
     grid-area: left;
 }
 
-.author {
-    margin: 10% 0;
-    max-width: 100px;
-    text-align: center;
-}
-
-.author img {
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-}
-
-.author p {
-    margin: 12% 0;
-    text-align: center;
-}
-
-.author-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-}
-
-.author-title {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 0.7rem;
-    font-weight: 700;
-    line-height: 1.5em;
-    text-transform: uppercase;
-}
-
 #content {
     grid-area: right;
 }
@@ -94,6 +64,10 @@ body {
     height: 50vh;
     max-height: 90vh;
     width: 100%;
+}
+
+.author {
+    margin: 10% 0;
 }
 
 .blog-banner {
@@ -190,7 +164,6 @@ body {
 
     .author {
         margin: 10% 0 20%;
-        max-width: 200px;
     }
 
     .container {

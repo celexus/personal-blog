@@ -269,6 +269,35 @@ a.alt-btn,a.alt-btn:hover {
     width: 45%;
 }
 
+.author {
+    max-width: 100px;
+    text-align: center;
+}
+
+.author img {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.author p {
+    margin: 12% 0;
+    text-align: center;
+}
+
+.author-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+}
+
+.author-title {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1.5em;
+    text-transform: uppercase;
+}
+
 .social-icons {
     list-style: none;
 }
@@ -324,6 +353,10 @@ input[type="email"],input[type="input"] {
 
     .card {
         width: 25%;
+    }
+
+    .author {
+        max-width: 200px;
     }
 
     fieldset {
