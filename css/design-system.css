@@ -97,14 +97,6 @@ blockquote:before {
     width: 3rem;
 }
 
-blockquote:after {
-    color: #e74c3c;
-    content: "\2013 \2003" attr(cite);
-    display: block;
-    font-size: 0.875em;
-    text-align: right;
-}
-
 img {
     width: 100%;
 }
