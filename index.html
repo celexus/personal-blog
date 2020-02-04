@@ -5,74 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Celéste's Blog</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <div class="container">
+
         <header id="header">
-            <div class="logo-container">
-                <img class="logo" src="images/logo_200x200.png" alt="celestera"/>
-            </div>
+
+            <nav id="navigation">
+
+                <ul class="menu">
+                    <li class="active">
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/">Blog Post</a>
+                    </li>
+                </ul>
+
+            </nav>
+
         </header>
 
         <aside id="sidebar">
 
-            <div class="profile">
-                <img src="images/profile.jpg" alt="Celeste Erasmus"/>
+            <div class="logo-container">
+                <a href="/"><img class="logo" src="images/logo_200x200.png" alt="celestera"/></a>
             </div>
-            <nav id="navigation">
-            <ul class="menu">
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/">Blog Post</a>
-                </li>
-            </ul>
-            </nav>
 
-
+            <div class="author">
+                <img src="images/profile.jpg" alt="Celeste Erasmus"/>
+                <p class="author-name">Celéste Erasmus</p>
+                <p class="author-title">Freelance Analyst Web Developer</p>
+            </div>
 
         </aside>
+
         <section id="content">
 
             <div class="banner">
 
                 <div class="caption">
-                    <h1>Web Development & CMS Integration</h1>
+                    <h1>This is me;</h1>
                 </div>
 
             </div>
 
-            <div id="portfolio">
+            <div class="intro">
+                <h2>About Me</h2>
+                <p><strong>Hi, I'm Celéste.</strong> I live in Cape Town, South Africa in a suburb called Bloubergstrand.</p>
+                <p>I work remotely as freelance Web Developer. I learned to code many moons ago by doing an MCSD .Net, but these days I stick to PHP, SQL, jQuery and CMS Integration with Craft CMS & Wordpress.</p>
+                <p>I enjoy working remotely as it allows me the flexibility to pursue my passions: crossfit, surfing & travel.</p>
+            </div>
 
-                <h2>Portfolio</h2>
+            <section class="cards">
 
-                <article class="article">
-                    <img src="images/momster-project.jpg" alt="Momster Box"/>
+                <article class="card">
+                    <h3>Zanzibar</h3>
+                    <hr>
+                    <img src="images/zanzibar.jpg" alt="Zanzibar"/>
+                    <p class="card-meta">2 February 2020 | Travel </p>
+                    <p>Zanzibar is a Tanzanian archipelago off the coast of East Africa. On its main island, Unguja, familiarly called Zanzibar, is Stone Town, a historic trade center with Swahili and Islamic influences. Its winding lanes present minarets, carved doorways and 19th-century landmarks such as the House of Wonders, a former sultan’s palace.</p>
+                    <a href="#" class="alt-btn">Read More</a>
                 </article>
 
-                <article class="article">
-                    <img src="images/spier-project.jpg" alt="Spier"/>
+                <article class="card">
+                    <h3>King of the Mountain</h3>
+                    <hr>
+                    <img src="images/crossfit-comp.jpg" alt="King of the mountain"/>
+                    <p class="card-meta">20 January 2020 | Crossfit </p>
+                    <p>2020 sees the return of the King of the Mountain fitness event and the chance for those would be kings and queens to once again prove themselves in an arena where sheer willpower is the only currency that matters.</p>
+                    <p>Get ready for something special, because it’s good to be fitness royalty.</p>
+                    <a href="#" class="alt-btn">Read More</a>
                 </article>
 
-                <article class="article">
-                    <img src="images/bbmpoa-project.jpg" alt="BBMPOA"/>
+                <article class="card">
+                    <h3>Lamberts Bay</h3>
+                    <hr>
+                    <img src="images/surfing-lamberts.jpg" alt="Surfing Lamberts Bay"/>
+                    <p class="card-meta">16 December 2019 | Surfing </p>
+                    <p>Lambert's Bay is a small fishing town in the Western Cape province of South Africa situated 280 kilometres north of Cape Town. It is part of the Cederberg Municipality.</p>
+                    <p>The coast town has been proclaimed 'the Diamond of the West Coast' because of its white beaches, wildlife and lobsters.</p>
+                    <a href="#" class="alt-btn">Read More</a>
                 </article>
+
+            </section>
+
+        </section>
+
+        <footer id="footer">
+
+            <div class="col-2">
+
+                <ul class="social-icons">
+                    <li><img src="images/005-linkedin.png" alt="LinkedIn" /></li>
+                    <li><img src="images/004-facebook.png" alt="Facebook" /></li>
+                    <li><img src="images/006-instagram.png" alt="Instagram" /></li>
+                </ul>
 
             </div>
 
-        </section>
-        <footer id="footer">
+            <div class="col-2">
 
-            <ul class="social">
-                <li><a href="https://www.facebook.com/celeste.erasmus.501" target="_blank"><span>Facebook</span></a></li>
-                <li><a href="https://www.instagram.com/celestera/" target="_blank"><span>Instagram</span></a></li>
-                <li><a href="https://www.linkedin.com/in/celeste-erasmus-55712232" target="_blank"><span>LinkedIn</span></a></li>
-                <li><a href="mailto:celeste.nexus@gmail.com" target="_blank"><span>Email</span></a></li>
-            </ul>
+                <h4>Subscribe</h4>
+                <form id="subscribe" action="" method="POST">
+                    <fieldset>
+                        <label for="fname">Name:</label><br>
+                        <input id="fname" type="text" name="fname">
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" name="email"><br>
+                    </fieldset>
+                    <input class="btn" type="submit" value="Submit">
+                </form>
+
+            </div>
 
         </footer>
+
     </div>
 </body>
 </html>
