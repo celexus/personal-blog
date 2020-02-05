@@ -1,16 +1,12 @@
 @import url(reset.css);
 
 body {
+    font: 15px/1.8em 'Source Sans Pro', sans-serif;
     color: #69676f;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15px;
-    line-height: 1.8em;
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
-    font-size:
-            2rem;
+    font: 2rem 'Playfair Display', serif;
 }
 
 h2 {
@@ -74,13 +70,13 @@ em {
 }
 
 blockquote {
-    border-color: #eee;
-    border-style: solid;
-    border-width: 2px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
     display: block;
     margin: 1.5em 0;
     padding: 1.5em 0 0.5em;
     position: relative;
+    text-align: center;
 }
 
 blockquote:before {
@@ -178,7 +174,8 @@ img {
     background-color: #3d3d3e;
 }
 
-.btn,a.alt-btn:hover {
+.btn,
+a.alt-btn:hover {
     background-color: #00b69b;
     border: 1px solid #00b69b;
     color: #fff;
@@ -188,8 +185,9 @@ img {
     width: 100%;
 }
 
-.alt-btn,a.alt-btn {
-    background-color: transparent;
+.alt-btn,
+a.alt-btn {
+    background: transparent;
     border: 1px solid #00b69b;
     color: #00b69b;
     display: block;
@@ -200,7 +198,8 @@ img {
     width: 100%;
 }
 
-a.alt-btn,a.alt-btn:hover {
+a.alt-btn,
+a.alt-btn:hover {
     width: auto;
 }
 
@@ -254,11 +253,15 @@ a.alt-btn,a.alt-btn:hover {
     flex-wrap: wrap;
 }
 
-.gallery figure {
+figure {
     border: 1px solid #d4d0ce;
     margin: 1%;
     padding: 1%;
     width: 45%;
+}
+
+figcaption {
+    font-size: 0.85rem;
 }
 
 .author {
@@ -278,25 +281,26 @@ a.alt-btn,a.alt-btn:hover {
 }
 
 .author-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
+    font: 1.5rem 'Playfair Display', serif;
 }
 
 .author-title {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 0.7rem;
-    font-weight: 700;
-    line-height: 1.5em;
+    font: 700 0.7rem/1.5em Arial, "Helvetica Neue", Helvetica, sans-serif;
     text-transform: uppercase;
 }
 
 .social-icons {
     list-style: none;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin: 1.5em 0;
+    padding: 0.5em 0;
+    text-align: right;
 }
 
 .social-icons li {
     display: inline-block;
-    margin: 0.5em;
+    margin: 0.5em 0.2em;
 }
 
 label {
@@ -308,7 +312,8 @@ fieldset {
     width: 100%;
 }
 
-input[type="email"],input[type="input"] {
+input[type="email"],
+input[type="text"] {
     border: none;
     line-height: 1.8em;
     width: 100%;

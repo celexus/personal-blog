@@ -1,0 +1,39 @@
+.blog-banner {
+    display: flex;
+    flex-wrap: nowrap;
+    grid-area: banner;
+    height: 50vh;
+    max-height: 50vh;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 5%;
+}
+
+.blog-post h1 {
+    margin: 3% 0;
+}
+
+.blog-post h2 {
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+
+.related-posts {
+    margin: 5%;
+}
+
+.related-posts h3 {
+    margin: 3% 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 800px){
+
+    .blog-banner {
+        height: 50vh;
+    }
+
+}

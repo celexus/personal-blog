@@ -1,5 +1,6 @@
 @import url(reset.css);
 @import url(design-system.css);
+@import url(blog-post.css);
 
 body {
     color: #4a4737;
@@ -21,10 +22,6 @@ body {
     grid-area: top;
 }
 
-.logo-container {
-    margin: 10% 0 0;
-}
-
 .logo {
     max-width: 75px;
 }
@@ -37,7 +34,8 @@ body {
     width: 100%;
 }
 
-.menu,.social {
+.menu,
+.social {
     list-style: none;
 }
 
@@ -55,9 +53,7 @@ body {
 }
 
 .banner {
-    background-image: url(../images/main-banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(../images/main-banner.jpg) no-repeat 0 0/cover;
     display: flex;
     flex-wrap: nowrap;
     grid-area: banner;
@@ -66,16 +62,10 @@ body {
     width: 100%;
 }
 
-.author {
-    margin: 10% 0;
-}
-
-.blog-banner {
+.intro {
     display: flex;
-    flex-wrap: nowrap;
-    grid-area: banner;
-    height: 50vh;
-    max-height: 50vh;
+    flex-direction: column;
+    margin: 2% 5%;
 }
 
 .intro h2 {
@@ -86,24 +76,6 @@ body {
 .caption {
     color: #fff;
     padding: 12%;
-}
-
-.blog-post h1 {
-    margin: 3% 0;
-}
-
-.blog-post h2 {
-    font-size: 1.2rem;
-    margin: 2% 0;
-}
-
-.related-posts {
-    margin: 5%;
-}
-
-.related-posts h3 {
-    margin: 3% 0;
-    width: 100%;
 }
 
 .menu {
@@ -120,9 +92,8 @@ body {
 }
 
 .menu a {
+    font: 0.93333333333333rem 'Source Sans Pro', sans-serif;
     color: #fff;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 0.93333333333333rem;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -133,7 +104,13 @@ body {
     grid-area: bottom;
 }
 
-.social a,h4 {
+#footer .social-icons {
+    border: none;
+    text-align: left;
+}
+
+.social a,
+h4 {
     color: #fff;
 }
 
@@ -143,13 +120,16 @@ body {
     justify-content: space-between;
 }
 
-.intro,.blog-post {
-    display: flex;
-    flex-direction: column;
-    margin: 2% 5%;
-}
-
 @media only screen and (min-width: 800px){
+
+    .logo-container {
+        margin: 10% 0 0;
+    }
+
+    .author {
+        margin: 10% 0;
+    }
+
     .banner {
         height: 90vh;
     }
@@ -172,4 +152,5 @@ body {
         grid-template-rows: auto;
         max-width: 1800px;
     }
+
 }
